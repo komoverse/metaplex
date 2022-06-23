@@ -477,16 +477,44 @@ const Home = (props: HomeProps) => {
   }, [refreshCandyMachineState]);
 
   return (
-    <Container style={{ marginTop: 100 }}>
-      <Container maxWidth="xs" style={{ position: 'relative' }}>
+    <Container style={{ paddingTop: 50, paddingBottom: 50 }}>
+      <Container maxWidth="sm" style={{ position: 'relative', float: 'left' }}>
+        <img
+          style={{ width: '48%', margin: '3px 5px' }}
+          src="https://komoverse.io/assets/img/nft/lizard-30.webp"
+          alt="Lizard NFT Samples"
+        ></img>
+        <img
+          style={{ width: '48%', margin: '3px 5px' }}
+          src="https://komoverse.io/assets/img/nft/chameleon-30.webp"
+          alt="Chameleon NFT Samples"
+        ></img>
+        <img
+          style={{ width: '48%', margin: '3px 5px' }}
+          src="https://komoverse.io/assets/img/nft/komodo-30.webp"
+          alt="Komodo NFT Samples"
+        ></img>
+        <img
+          style={{ width: '48%', margin: '3px 5px' }}
+          src="https://komoverse.io/assets/img/nft/dragon-30.webp"
+          alt="Dragon NFT Samples"
+        ></img>
+      </Container>
+      <Container maxWidth="sm" style={{ position: 'relative', float: 'right' }}>
         <Paper
+          className="ylbr"
           style={{
-            padding: 24,
-            paddingBottom: 10,
-            backgroundColor: '#151A1F',
+            padding: '100px 25px 25px 25px',
+            backgroundColor: 'black',
             borderRadius: 6,
+            marginTop: 100,
           }}
         >
+          <img
+            style={{ position: 'absolute', top: -23, left: 75 }}
+            src="https://komoverse.io/assets/img/logo.png"
+            alt="Komodo Legends Logo"
+          ></img>
           {!wallet.connected ? (
             <ConnectButton>Connect Wallet</ConnectButton>
           ) : (
@@ -699,9 +727,20 @@ const Home = (props: HomeProps) => {
             Powered by METAPLEX
           </Typography>
         </Paper>
+        <Paper
+          style={{
+            padding: 25,
+            background: 'rgba(0,0,0,0.6)',
+            marginTop: 20,
+            fontSize: '0.8rem',
+          }}
+        >
+          * Require CIVIC Captcha Verification. NO BOTS Allowed to Mint.
+        </Paper>
       </Container>
 
       <Snackbar
+        anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
         open={alertState.open}
         autoHideDuration={
           alertState.hideDuration === undefined ? 6000 : alertState.hideDuration

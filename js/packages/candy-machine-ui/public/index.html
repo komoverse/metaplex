@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="https://komoverse.io/assets/img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -24,9 +24,51 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Candy Machine UI</title>
+<title>MINT Komodo Legends DEVNET</title>
+<link rel="stylesheet" href="https://komoverse.io/assets/css/main.css">
+<link rel="stylesheet" href="https://komoverse.io/assets/css/custom.css">
+<style>
+      .diagonal-info {
+        transform: rotate( 45deg );
+        background: red;
+        right: -80px;
+        top: 35px;
+        position: absolute;
+        padding: 10px 100px;
+        text-align: center;
+      }
+      .MuiAlert-standardSuccess {
+        color: white !important;
+        background-color: green !important;
+        box-shadow: 0 0 10px 7px white !important;
+      }
+      .MuiAlert-standardInfo {
+        color: white !important;
+        background-color: rgb(0, 92, 128) !important;
+        box-shadow: 0 0 10px 7px white !important;
+      }
+      .MuiAlert-standardError {
+        color: white !important;
+        background-color: red !important;
+        box-shadow: 0 0 10px 7px white !important;
+      }
+      .MuiAlert-standardError .MuiAlert-icon {
+          color: white !important;
+      }
+      .MuiAlert-standardWarning {
+        color: black !important;
+        background-color: rgb(255, 230, 0) !important;
+        box-shadow: 0 0 10px 7px white !important;
+      }
+    </style>
   </head>
   <body>
+    <div class="diagonal-info">
+    <h2 style="margin: 0">DEVNET</h2>
+    <span>Mint Website Test</span>
+    </div>
+    <div class="bg-lines"></div>
+    <div class="bg-breathing"></div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
